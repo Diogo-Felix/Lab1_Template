@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Queue<Integer> queue = new QueueLinkedList<>(10);
+        Queue<Integer> queue = new QueueLinkedList<>(5);
 
         //TODO: testar implementação
 
