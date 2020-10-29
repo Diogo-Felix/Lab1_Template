@@ -23,6 +23,7 @@ class QueueLinkedListTest {
         queue.enqueue("PA");
 
         assertEquals("PA", queue.front());
+
         assertEquals(1, queue.size());
 
     }
