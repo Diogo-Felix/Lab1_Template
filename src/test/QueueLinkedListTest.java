@@ -89,6 +89,6 @@ class QueueLinkedListTest {
         queue.enqueue("PA");
         queue.enqueue("IPS");
         queue.clear();
-        assertEquals(1, queue.size());
+        assertEquals(0, queue.size());
     }
 }

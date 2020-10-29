@@ -16,11 +16,7 @@ public class QueueLinkedList<T> implements Queue<T> {
      * Creates a new double linked list implementation of the queue data structure
      */
     public QueueLinkedList(int capacity) {
-        header = new Node(null, null, null);
-        trailer = new Node(null, header, null);
-
-        header.next = trailer;
-        size = 0;
+        clear();
         this.capacity = capacity;
     }
 
@@ -97,7 +93,11 @@ public class QueueLinkedList<T> implements Queue<T> {
      * Removes all the elements from the queue
      */
     public void clear() {
+        header = new Node(null, null, null);
+        trailer = new Node(null, header, null);
 
+        header.next = trailer;
+        size = 0;
     }
 
     private class Node {
